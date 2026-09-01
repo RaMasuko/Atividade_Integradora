@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    }
+/* TODO: Complete a classe que centraliza e estiliza o cartão principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* TODO: Centralize o texto do container */
+    text-align: center;
+    max-width: 800px;
+    /* TODO: Centralize a div na tela usando margem automática */
+    margin: auto;
+    }
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745; /* Verde */
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    }
+
+/* TODO: Faça a tabela ocupar 100% da largura do container */
+table {
+    width: 100%;
+    /* TODO: Junte as bordas duplas da tabela em uma só */
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+
+/* TODO: Estilize as células de cabeçalho (th) e de dados (td) */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+/* TODO: Defina a cor do cabeçalho da tabela (th) */
+th {
+    background-color: #007bff; /* Azul */
+    color: white;
+    }
+/* TODO: Aplique o efeito de "linha zebrada" nas linhas pares do corpo da tabela */
+tbody tr:nth-child {
+    background-color: #f2f2f2;
+    }

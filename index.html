@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Painel de Saúde</title>
+
+        <!-- TODO: Vincule aqui o arquivo CSS externo 'style.css' -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- TODO: Crie uma div container para centralizar o conteúdo da página -->
+        <div class="container">
+            <!-- TODO: Adicione o título principal da página (Painel de Saúde da Clínica) -->
+            <h1>Painel de Saúde da Clínica</h1>
+            <!-- TODO: Crie o botão para acionar o relatório. Lembre-se do ID correto para o JS! -->
+            <button id="gerar-relatorio">Gerar Relatório</button>
+            <!-- TODO: Crie a estrutura da tabela -->
+            <table id="relatorio-tabela">
+            <thead>
+                <tr>
+                <!-- TODO: Adicione os 3 cabeçalhos da tabela (Nome, IMC, Classificação) -->
+                    <th>Nome</th>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </tr>
+            </thead>
+            <!-- TODO: Identifique o corpo da tabela onde as linhas do relatório serão inseridas
+            dinamicamente pelo JS -->
+            <tbody id="corpo-tabela">
+
+            </tbody>
+            </table>
+        </div>
+        <!-- TODO: Importe aqui o arquivo JavaScript 'script.js' antes do fechamento do body -->
+        <script src="script.js"></script>
+    </body>
+</html>
