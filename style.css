@@ -2,19 +2,46 @@ body {
     font-family: sans-serif;
     background-color: #f0f2f5;
     padding: 20px;
-    }
-/* TODO: Complete a classe que centraliza e estiliza o cartão principal */
+}
+
+/* Cartão principal centralizado e estilizado */
 .container {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* TODO: Centralize o texto do container */
+    
+    /* Centraliza o texto do container */
     text-align: center;
     max-width: 800px;
-    /* TODO: Centralize a div na tela usando margem automática */
-    margin: auto;
-    }
+    
+    /* Centraliza a div na tela usando margem automática */
+    margin: 40px auto;
+}
+
+/* Estilização do formulário e inputs (caso queira alinhar os campos do form) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
 
 button {
     padding: 12px 25px;
@@ -24,29 +51,38 @@ button {
     background-color: #28a745; /* Verde */
     color: white;
     cursor: pointer;
+    margin-top: 10px;
     margin-bottom: 20px;
-    }
+    transition: background-color 0.2s;
+}
 
-/* TODO: Faça a tabela ocupar 100% da largura do container */
+button:hover {
+    background-color: #218838;
+}
+
+/* Tabela ocupa 100% da largura do container */
 table {
     width: 100%;
-    /* TODO: Junte as bordas duplas da tabela em uma só */
+    
+    /* Junte as bordas duplas da tabela em uma só */
     border-collapse: collapse;
     margin-top: 20px;
-    }
+}
 
-/* TODO: Estilize as células de cabeçalho (th) e de dados (td) */
+/* Estiliza as células de cabeçalho (th) e de dados (td) */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
 }
-/* TODO: Defina a cor do cabeçalho da tabela (th) */
+
+/* Define a cor do cabeçalho da tabela (th) */
 th {
     background-color: #007bff; /* Azul */
     color: white;
-    }
-/* TODO: Aplique o efeito de "linha zebrada" nas linhas pares do corpo da tabela */
-tbody tr:nth-child {
+}
+
+/* Aplica o efeito de "linha zebrada" nas linhas pares do corpo da tabela */
+tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-    }
+}
